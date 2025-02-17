@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Pizza - Sweaty Pizza</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure your styles.css is linked here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .order-form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 1.1em;
+        }
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #e15d4a;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Order Your Sweaty Pizza</h1>
+        <p>Fill out the form below to place your order!</p>
+    </header>
+
+    <div class="order-form">
+        <h2>Pizza Order Form</h2>
+        <form action="thank-you.html" method="GET">
+            <!-- Name Field -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Pizza Selection -->
+            <label for="pizza">Choose Your Pizza:</label>
+            <select id="pizza" name="pizza" required>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="veggie">Veggie</option>
+                <option value="margarita">Margarita</option>
+                <option value="hawaiian">Hawaiian</option>
+            </select>
+
+            <!-- Address Field -->
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sweaty Pizza. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
